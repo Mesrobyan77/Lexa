@@ -1,0 +1,74 @@
+:root {
+  --bg: #1f2431;
+  --primary: #7a6fbe;
+  --muted: #a3a7bf;
+  --text-secondary: #575b65;
+  --text: #d7d5ec;
+  --bs-header-bg: #7a6fbe;
+  --header-bg: #7a6fbe;
+  --icon-color: #dbd9ed;
+  --dd-bg: #293142;
+  --dd-text: #1c71c4;
+  --top-nav: #79829c;
+  --activity-feed-bg: #ffffff0a;
+  --border: #3a445b;
+  --card-title: #adb5bd;
+  --feed-bg: #30384b;
+  --feed-text: #8c8c8c;
+  --feed-date: #8c96a3;
+  --quote-text: #ffffff;
+  --table-text: #adb5bdbf;
+  --btn-bg: #6c757d;
+  --success: #0ab39c;
+  --warning: #f7b84b;
+  --danger: #f06548;
+
+  --badge-success-bg: #58db83;
+  --badge-warning-bg: #f5b225;
+  --badge-danger-bg: #ec536c;
+
+  --scrollbar-thumb: rgba(var(--primary-rgb), 0.35);
+  --scrollbar-thumb-hover: rgba(var(--primary-rgb), 0.55);
+  --scrollbar-track: transparent;
+
+  --primary-rgb: 122, 111, 190;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  min-width: 320px;
+}
+
+.light {
+  --bg: #f5f5f5;
+  --primary: #7a6fbe;
+  --muted: #dbd9ed;
+  --text-secondary: #555b6d;
+  --text: #555b6d;
+  --header-bg: #ffffff;
+  --dd-bg: #ffffff;
+  --dd-text: #1f2431;
+  --icon-color: #dbd9ed;
+  --top-nav: #79829c;
+  --activity-feed-bg: #f8f9fa;
+  --border: #dee2e6;
+  --card-title: #060709;
+  --chart-text-col: #f0f1f4;
+  --feed-bg: #f8f9fa;
+  --feed-text: #1f2431;
+  --feed-date: #8c96a3;
+  --quote-text: #ffffff;
+  --table-text: #1f2431bf;
+  --btn-bg: #6c757d;
+  --success: #0ab39c;
+  --warning: #f7b84b;
+  --danger: #f06548;
+
+  --scrollbar-thumb: rgba(var(--primary-rgb), 0.25);
+  --scrollbar-thumb-hover: rgba(var(--primary-rgb), 0.45);
+
+  --footer-bg: #fafafa;
+  --footer-color: #5b626b;
+}

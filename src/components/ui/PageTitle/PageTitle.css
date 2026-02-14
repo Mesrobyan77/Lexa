@@ -1,0 +1,104 @@
+.pt-wrapper {
+  background: #2a3142;
+  padding: 13px 0px;
+  height: 135px;
+}
+
+.pt-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.pt-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.pt-left,
+.pt-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.pt-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pt-title-box h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.pt-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.pt-breadcrumb a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.pt-breadcrumb a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pt-breadcrumb-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.pt-breadcrumb-item::after {
+  margin-top: 2px;
+  padding-left: 8px;
+  font-weight: 700;
+  content: ">";
+  opacity: 0.6;
+}
+
+.pt-breadcrumb-item:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.pt-breadcrumb-item.active {
+  opacity: 0.9;
+}
+
+@media (max-width: 760px) {
+  @media (max-width: 760px) {
+    .pt-wrapper {
+      height: auto;
+    }
+    .pt-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .pt-right {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+
+  .pt-inner {
+    position: relative;
+  }
+
+  .top {
+    top: 150px;
+    position: absolute;
+  }
+}

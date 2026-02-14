@@ -1,0 +1,25 @@
+.ds-feed {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ds-feed-item {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 12px;
+  color: var(--text);
+}
+
+.ds-feed-date {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.ds-feed-text {
+  color: var(--text);
+  font-size: 13px;
+}

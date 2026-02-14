@@ -1,0 +1,26 @@
+.rb-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+.rb-btn__icon {
+  animation: rb-spin 1.4s linear infinite;
+  color: var(--);
+}
+
+@keyframes rb-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

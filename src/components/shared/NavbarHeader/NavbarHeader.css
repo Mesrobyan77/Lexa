@@ -1,0 +1,133 @@
+.navbar-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: var(--header-bg);
+  padding: 7px;
+  backdrop-filter: blur(8px);
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.float-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.search-language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.maximize {
+  color: var(--text);
+}
+
+.set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-desktop {
+  display: inline-flex;
+}
+
+.logo-mobile {
+  display: none;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.burger-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text);
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-only {
+  display: none;
+}
+.desktop-only {
+  display: flex;
+}
+
+@media (max-width: 760px) {
+  .logo-desktop {
+    display: none;
+  }
+  .logo-mobile {
+    display: block;
+  }
+
+  .burger-btn {
+    display: inline-flex;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: inline-flex;
+  }
+
+  .float-end {
+    gap: 10px;
+  }
+  .set {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-mobile {
+    display: none;
+  }
+}

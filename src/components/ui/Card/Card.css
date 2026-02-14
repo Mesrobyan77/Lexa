@@ -1,0 +1,18 @@
+.ds-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.ds-card-body {
+  background-color: var(--dd-bg);
+  padding: 18px;
+}
+
+.ds-card-title {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(----card-title);
+  letter-spacing: 0.2px;
+}

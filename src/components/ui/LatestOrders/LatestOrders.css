@@ -1,0 +1,127 @@
+.lo {
+  width: 100%;
+}
+
+.lo-scroll {
+  max-height: 360px;
+  overflow: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+.lo-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.lo-scroll::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 999px;
+}
+.lo-scroll::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.lo-scroll:hover::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-hover);
+}
+
+.lo-row {
+  display: grid;
+  grid-template-columns: 80px 250px 70px 50px 50px 50px;
+  gap: 16px;
+  align-items: center;
+  font-size: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.lo-row:last-child {
+  border-bottom: 0;
+}
+
+.lo-id {
+  color: var(--table-text);
+  white-space: nowrap;
+}
+
+.lo-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.lo-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.lo-product {
+  color: var(--table-text);
+  white-space: nowrap;
+}
+
+.lo-badge {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  height: 16px;
+  padding: 0 8px;
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.lo-badge--success {
+  background: var(--badge-success-bg);
+  color: #fff;
+}
+
+.lo-badge--warning {
+  background: var(--badge-warning-bg);
+  color: #fff;
+}
+
+.lo-badge--danger {
+  background: var(--badge-danger-bg);
+  color: #fff;
+}
+
+.lo-price {
+  color: var(--table-text);
+  white-space: nowrap;
+}
+
+.lo-date {
+  color: var(--table-text);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.lo-edit {
+  justify-self: end;
+  height: 28px;
+  padding: 0 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: var(--btn-bg);
+  color: var(--btn-text, #fff);
+
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.lo-edit:hover {
+  background: var(--activity-feed-bg);
+  border-color: var(--primary);
+}

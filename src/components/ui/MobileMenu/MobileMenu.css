@@ -1,0 +1,106 @@
+.mm-backdrop{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.45);
+    border: 0;
+    z-index: 9998;
+  }
+  
+  .mm-panel{
+    position: fixed;
+    top: 0;               
+    left: 0;
+    transform: translateX(-50%);
+    width: min(100vw, 1200px);  
+    max-width: 100vw;
+    background: #323a4e;
+    z-index: 9999;
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+
+  
+  .mm-nav{
+    padding: 12px;
+    overflow: auto;
+  }
+  
+
+  .mm-item{
+    width: 100%;
+    height: 54px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    color: #a8b3cf;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .mm-item:hover{
+    background: rgba(255,255,255,.06);
+  }
+  
+  .mm-item.is-active{
+    color: #7a6fbe;
+  }
+  
+  .mm-ico{
+    width: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .95;
+  }
+  
+  .mm-text{
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .mm-chev{
+    opacity: .8;
+    transition: transform .18s ease;
+  }
+  .mm-chev.is-open{ transform: rotate(180deg); }
+  
+
+  .mm-sub{
+    margin: 6px 0 10px 40px;
+    padding-left: 12px;
+    border-left: 2px solid rgba(122,111,190,.35);
+    overflow: hidden;
+  }
+  
+  .mm-sublink{
+    display: block;
+    padding: 10px 10px;
+    color: #8f9bb7;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .mm-sublink:hover{
+    background: rgba(255,255,255,.06);
+    color: #fff;
+  }
+  
+  .mm-nav::-webkit-scrollbar{ width: 8px; }
+  .mm-nav::-webkit-scrollbar-thumb{
+    background: rgba(255,255,255,.18);
+    border-radius: 20px;
+  }
+  

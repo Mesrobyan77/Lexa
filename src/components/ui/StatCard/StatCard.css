@@ -1,0 +1,110 @@
+.stat-card {
+  border-radius: 0.25rem;
+  background: var(--primary);
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 160px;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
+}
+
+.wave-bg {
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.stat-card-content {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+}
+
+.stat-card-box {
+  margin-bottom: 16px;
+}
+
+.stat-card-title {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 6px 0;
+  opacity: 0.92;
+}
+
+.stat-card-value {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+
+.stat-card-icon {
+  position: absolute;
+  top: 22px;
+  right: 18px;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.stat-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.stat-card-sub {
+  opacity: 0.85;
+}
+
+.ds-badge {
+  padding: 2px 4px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+}
+
+.ds-badge--info {
+  background: rgba(41, 187, 227, 0.95);
+}
+.ds-badge--danger {
+  background: rgba(255, 90, 90, 0.95);
+}
+.ds-badge--warning {
+  background: rgba(255, 193, 7, 0.95);
+  color: #1a1a1a;
+}
+.ds-badge--success {
+  background: rgba(34, 197, 94, 0.95);
+}
+
+@media (max-width: 600px) {
+  .stat-card {
+    padding: 18px;
+    min-height: 150px;
+  }
+
+  .stat-card-icon {
+    top: 14px;
+    right: 14px;
+    width: 56px;
+    height: 56px;
+  }
+}

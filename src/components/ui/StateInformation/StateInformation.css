@@ -1,0 +1,27 @@
+.state-information {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.state-graph {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.state-graph .info {
+  font-size: 13px;
+  white-space: nowrap;
+  color: #A6AEB6;
+}
+
+@media (max-width: 760px) {
+  .state-information {
+    display: none;
+  }
+}

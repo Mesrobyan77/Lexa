@@ -1,0 +1,29 @@
+.app-search {
+  padding: 9px 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff1a;
+  border: none;
+  border-radius: 30px;
+  box-shadow: none;
+  height: 38px;
+  padding-left: 20px;
+  padding-right: 16px;
+
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    &::placeholder {
+      color: var(--muted);
+    }
+  }
+
+  .search-icon {
+    color: var(--icon-color);
+  }
+}

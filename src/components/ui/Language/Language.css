@@ -1,0 +1,106 @@
+.dd {
+  position: relative;
+  display: inline-block;
+}
+
+.dd__toggle {
+  height: 40px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text);
+}
+
+.dd__flag {
+  height: 16px;
+  object-fit: cover;
+}
+
+.dd__label {
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.dd__chev {
+  font-size: 14px;
+  opacity: 0.9;
+  transform: translateY(-1px);
+  transition: transform 180ms ease;
+}
+
+.dd__chev.is-open {
+  transform: rotate(180deg) translateY(1px);
+}
+
+.dd__menu {
+  position: absolute;
+  top: calc(100% + 15px);
+  width: 160px;
+  background: var(--dd-bg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+  z-index: 9999;
+  padding: 12px 0;
+}
+
+.dd__menu.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dd__item {
+  background-color: initial;
+  border: 0;
+  border-radius: 0;
+  clear: both;
+  color: var(--text);
+  font-weight: 400;
+  padding: 5px 16px;
+  text-align: inherit;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dd__item:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.dd__item-flag {
+  width: 18px;
+  height: 12px;
+  object-fit: cover;
+}
+
+.dd__item-label {
+  font-size: 14px;
+}
+
+.light .dd__menu {
+  background: rgba(255, 255, 255, 0.98);
+  color: var(--text);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.light .dd__item {
+  color: var(--text);
+}
+
+.light .dd__item:hover {
+  background: rgba(0, 0, 0, 0.06);
+}

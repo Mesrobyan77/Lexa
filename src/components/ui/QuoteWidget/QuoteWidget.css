@@ -1,0 +1,54 @@
+.ds-quote {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.light .ds-quote {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ds-quote-top {
+  background: var(--primary);
+  padding: 16px;
+  color: #fff;
+}
+
+.ds-quote-icon {
+  font-size: 34px;
+  opacity: 0.5;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.ds-quote-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.ds-quote-bottom {
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.light .ds-quote-bottom {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.ds-person-name {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ds-person-role {
+  margin: 4px 0 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
